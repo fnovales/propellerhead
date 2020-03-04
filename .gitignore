@@ -1,1 +1,16 @@
 node_modules
+Cache
+Backups
+CachedData
+CachedExtensions
+Code Cache
+GPUCache
+logs
+User
+Cookies
+Cookies-journal
+languagepacks.json
+machineid
+Network Persistent State
+rapid_render.json
+storage.json
