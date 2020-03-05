@@ -152,4 +152,8 @@ DELETE http://localhost:3000/customers/notes/1
 # Summary
 
 It took me 1 day of work to implement the solution.
-To update a note you have to send the customerId because is required field but if I had more time I could find a solution to this issue that is related to Loopback
+
+Things to improve with more time:
+	To update a note you have to send the customerId because is a required field but I could find a solution to this issue that is related to Loopback.
+	Hashing algorithm should be more sofisticated and secure
+	Allow bulk update of notes  
