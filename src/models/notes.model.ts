@@ -1,10 +1,10 @@
 import {Entity, model, property} from '@loopback/repository';
 
 @model({settings: {idInjection: false, postgresql: {schema: 'public', table: 'notes'}}})
-export class Notes extends Entity {
+export class Note extends Entity {
   @property({
     type: 'number',
-    required: true,
+    required: false,
     scale: 0,
     id: 1,
     postgresql: {columnName: 'id', dataType: 'integer', dataLength: null, dataPrecision: null, dataScale: 0, nullable: 'NO'},
@@ -20,7 +20,7 @@ export class Notes extends Entity {
 
   @property({
     type: 'date',
-    required: true,
+    required: false,
     postgresql: {columnName: 'creation', dataType: 'timestamp with time zone', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO'},
   })
   creation: string;
@@ -36,9 +36,9 @@ export class Notes extends Entity {
   @property({
     type: 'string',
     required: false,
-    postgresql: {columnName: 'hash', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO'},
+    postgresql: {columnName: 'etag', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO'},
   })
-  hash: string;
+  etag: string;
 
   // Define well-known properties here
 
@@ -46,7 +46,7 @@ export class Notes extends Entity {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [prop: string]: any;
 
-  constructor(data?: Partial<Notes>) {
+  constructor(data?: Partial<Note>) {
     super(data);
   }
 }
@@ -55,4 +55,4 @@ export interface NotesRelations {
   // describe navigational properties here
 }
 
-export type NotesWithRelations = Notes & NotesRelations;
+export type NotesWithRelations = Note & NotesRelations;

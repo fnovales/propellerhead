@@ -18,7 +18,7 @@ const datasources_1 = require("../datasources");
 const core_1 = require("@loopback/core");
 let NotesRepository = class NotesRepository extends repository_1.DefaultCrudRepository {
     constructor(dataSource) {
-        super(models_1.Notes, dataSource);
+        super(models_1.Note, dataSource);
     }
 };
 NotesRepository = __decorate([

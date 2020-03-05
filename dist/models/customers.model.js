@@ -18,7 +18,7 @@ let Customers = class Customers extends repository_1.Entity {
 __decorate([
     repository_1.property({
         type: 'number',
-        required: true,
+        required: false,
         scale: 0,
         id: 1,
         postgresql: { columnName: 'id', dataType: 'integer', dataLength: null, dataPrecision: null, dataScale: 0, nullable: 'NO' },
@@ -37,7 +37,7 @@ __decorate([
 __decorate([
     repository_1.property({
         type: 'date',
-        required: true,
+        required: false,
         postgresql: { columnName: 'creation', dataType: 'timestamp with time zone', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO' },
     }),
     __metadata("design:type", String)

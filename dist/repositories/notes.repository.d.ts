@@ -1,6 +1,6 @@
 import { DefaultCrudRepository } from '@loopback/repository';
-import { Notes, NotesRelations } from '../models';
+import { Note, NotesRelations } from '../models';
 import { DbDataSource } from '../datasources';
-export declare class NotesRepository extends DefaultCrudRepository<Notes, typeof Notes.prototype.id, NotesRelations> {
+export declare class NotesRepository extends DefaultCrudRepository<Note, typeof Note.prototype.id, NotesRelations> {
     constructor(dataSource: DbDataSource);
 }

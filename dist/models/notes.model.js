@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const repository_1 = require("@loopback/repository");
-let Notes = class Notes extends repository_1.Entity {
+let Note = class Note extends repository_1.Entity {
     constructor(data) {
         super(data);
     }
@@ -18,13 +18,13 @@ let Notes = class Notes extends repository_1.Entity {
 __decorate([
     repository_1.property({
         type: 'number',
-        required: true,
+        required: false,
         scale: 0,
         id: 1,
         postgresql: { columnName: 'id', dataType: 'integer', dataLength: null, dataPrecision: null, dataScale: 0, nullable: 'NO' },
     }),
     __metadata("design:type", Number)
-], Notes.prototype, "id", void 0);
+], Note.prototype, "id", void 0);
 __decorate([
     repository_1.property({
         type: 'string',
@@ -32,15 +32,15 @@ __decorate([
         postgresql: { columnName: 'description', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO' },
     }),
     __metadata("design:type", String)
-], Notes.prototype, "description", void 0);
+], Note.prototype, "description", void 0);
 __decorate([
     repository_1.property({
         type: 'date',
-        required: true,
+        required: false,
         postgresql: { columnName: 'creation', dataType: 'timestamp with time zone', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO' },
     }),
     __metadata("design:type", String)
-], Notes.prototype, "creation", void 0);
+], Note.prototype, "creation", void 0);
 __decorate([
     repository_1.property({
         type: 'number',
@@ -49,10 +49,18 @@ __decorate([
         postgresql: { columnName: 'customer_id', dataType: 'integer', dataLength: null, dataPrecision: null, dataScale: 0, nullable: 'NO' },
     }),
     __metadata("design:type", Number)
-], Notes.prototype, "customerId", void 0);
-Notes = __decorate([
+], Note.prototype, "customerId", void 0);
+__decorate([
+    repository_1.property({
+        type: 'string',
+        required: false,
+        postgresql: { columnName: 'etag', dataType: 'text', dataLength: null, dataPrecision: null, dataScale: null, nullable: 'NO' },
+    }),
+    __metadata("design:type", String)
+], Note.prototype, "etag", void 0);
+Note = __decorate([
     repository_1.model({ settings: { idInjection: false, postgresql: { schema: 'public', table: 'notes' } } }),
     __metadata("design:paramtypes", [Object])
-], Notes);
-exports.Notes = Notes;
+], Note);
+exports.Note = Note;
 //# sourceMappingURL=notes.model.js.map

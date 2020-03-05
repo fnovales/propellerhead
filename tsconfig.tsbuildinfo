@@ -1378,12 +1378,12 @@
         "signature": "5e9349c5a2ea4dfdd616a7130b365adf9711d249a8bb9cb3c1bbc2b5cb295333"
       },
       "./src/models/customers.model.ts": {
-        "version": "978dda39d449bd9b88483c82b4a8c719bad991155eeed66fdd41bb07a358a86a",
+        "version": "154b42faa7ed1c3b97fb2effca865e4626022e47e62d3c323ba370bb010fe818",
         "signature": "2964388283eac224c754da787800f393943787a868d84a2d3ddf8b25dd91e948"
       },
       "./src/models/notes.model.ts": {
-        "version": "3b2c9660f0fee0ebbbbf57df6cb13f9c81ab38b39cb969fd01659dd8dcab08e7",
-        "signature": "7ce6e896c304e0a8bf9505d546f389a3ee77c5a6fe8e218ed630a8c1c1571020"
+        "version": "67ac74131f48a6104a53cb0609f32acf47ee3434647d0f3448e35f1799e0aad7",
+        "signature": "86df605b2665714bbf11c204703490731a409b8fb1fb2e9ee3cb37ddc9f11fbb"
       },
       "./src/models/index.ts": {
         "version": "702c4ac47e20db1fb76385c134fe5b15067e98f8e50557af9f387cc3f4a5624f",
@@ -1410,8 +1410,8 @@
         "signature": "7dee6f019145747fe32929c551f8047ff8f78d368a101b4a9b142fba999f0b68"
       },
       "./src/repositories/notes.repository.ts": {
-        "version": "65644b95ee062ee6f4dc8329c85963233daef623ff619534e0a461a425490907",
-        "signature": "b52297f0ce9787602767256634421234192f7fb113e2836fe7679746d69468c3"
+        "version": "dcab71508b699ef72a764b989dfd4f3b26b96ad5b6c49027afb81f98e8442612",
+        "signature": "1ffea890cee522fbfe92f430ab40710f8adb09297df6d093711b74de674fbefc"
       },
       "./src/repositories/index.ts": {
         "version": "310d4e51249e1fcf38aee756dc4e23396655e9cc81f2b5c947e2410b13420cd6",
@@ -1429,9 +1429,13 @@
         "version": "1fe0f0e937945876541a6b61cee2014dc1468cb77c56494c853a32f8da56b949",
         "signature": "7cd45cf4a2453380de07af68cd25d511748b47c55d43b1aacd17981ed1669e45"
       },
+      "./node_modules/ts-md5/dist/md5.d.ts": {
+        "version": "c08c8d793256077068d9437e0b8df22fe477d9015fac544534ec6d296157f10d",
+        "signature": "c08c8d793256077068d9437e0b8df22fe477d9015fac544534ec6d296157f10d"
+      },
       "./src/controllers/notes.controller.ts": {
-        "version": "5a8197c5be94d92056c6b14c0c657cfa8059619a815bfa5e4a466f24de7eac0e",
-        "signature": "fbc9f676a6ed1e65b7c966e21c81abb40bde646f95571e850027172fb55c7f63"
+        "version": "219d6a623e26e5480d110ad003a3394cca28366b82b9fc74d25e57306cf911a1",
+        "signature": "49688c19ac60c2854808fbbd33284525f16d8624d47ced4883485702fbd6f5eb"
       },
       "./src/controllers/index.ts": {
         "version": "8305f024ba944738d2fe05c9e18f9fb202535fae29e2d46e4b600d6a5e7d98a5",
@@ -3882,11 +3886,17 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./node_modules/ts-md5/dist/md5.d.ts": [
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/controllers/notes.controller.ts": [
         "./node_modules/@loopback/repository/index.d.ts",
         "./node_modules/@loopback/rest/index.d.ts",
         "./src/models/index.ts",
         "./src/repositories/index.ts",
+        "./node_modules/@loopback/core/index.d.ts",
+        "./node_modules/ts-md5/dist/md5.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -6262,8 +6272,13 @@
         "./node_modules/@loopback/repository/index.d.ts",
         "./src/models/index.ts"
       ],
+      "./node_modules/ts-md5/dist/md5.d.ts": [
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./src/controllers/notes.controller.ts": [
         "./src/repositories/index.ts",
+        "./node_modules/@loopback/rest/index.d.ts",
         "./src/models/index.ts",
         "./node_modules/@loopback/repository/index.d.ts"
       ],
@@ -6677,7 +6692,7 @@
       "./src/controllers/customers.controller.ts",
       "./src/controllers/ping.controller.ts",
       "./src/controllers/status.controller.ts",
-      "./src/controllers/index.ts",
+      "./node_modules/ts-md5/dist/md5.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
       "./node_modules/@types/debug/index.d.ts",
       "./node_modules/@types/eslint-visitor-keys/index.d.ts",
@@ -6687,7 +6702,8 @@
       "./node_modules/@types/mocha/index.d.ts",
       "./node_modules/@types/on-finished/index.d.ts",
       "./node_modules/@types/type-is/index.d.ts",
-      "./src/controllers/notes.controller.ts"
+      "./src/controllers/notes.controller.ts",
+      "./src/controllers/index.ts"
     ]
   },
   "version": "3.7.5"
